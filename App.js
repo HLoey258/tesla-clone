@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, ImageBackground } from "react-native";
 import CarItem from "./components/CarItem/CarItem";
+import ButtonStyled from "./components/Button/ButtonStyled";
 export default function App() {
   return (
     <View style={styles.container}>
@@ -9,6 +10,7 @@ export default function App() {
         style={styles.image}
       />
       <CarItem></CarItem>
+      <ButtonStyled type="primary"></ButtonStyled>
     </View>
   );
 }
